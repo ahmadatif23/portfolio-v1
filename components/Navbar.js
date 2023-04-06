@@ -39,7 +39,7 @@ export default function Navbar() {
 
           <div className={ 'absolute top-0 h-screen bg-slate-200 bg-opacity-95 transition-all duration-700 ease-in-out overflow-hidden transform ' + (menu ? 'left-0' : '-left-1/2') }>
             <div className="w-full h-full flex flex-col justify-center">
-              <div className="flex items-center justify-center my-10">
+              <div className="flex items-center justify-center mt-10">
                 <div className="w-14 h-14 border-2 border-white rounded-full flex items-center justify-center"></div>
               </div>
 
