@@ -37,13 +37,13 @@ export default function Navbar() {
             </div>
           </div>
 
-          <div className={ 'absolute top-0 h-screen bg-slate-200 bg-opacity-95 transition-all duration-700 ease-in-out overflow-hidden transform ' + (menu ? 'left-0' : '-left-1/2') }>
+          <div className={ 'absolute top-0 w-full h-screen bg-slate-200 bg-opacity-[96%] transition-all duration-700 ease-in-out overflow-hidden transform ' + (menu ? 'left-0' : '-left-full') }>
             <div className="w-full h-full flex flex-col justify-center">
               <div className="flex items-center justify-center mt-10">
                 <div className="w-14 h-14 border-2 border-white rounded-full flex items-center justify-center"></div>
               </div>
 
-              <div className="flex-1 flex items-center">
+              <div className="flex-1 w-full flex justify-center items-center">
                 <div className="flex flex-col items-center gap-7 px-7">
                   <ul className="flex flex-col items-center gap-7">
                     <li>About</li>
