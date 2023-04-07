@@ -1,8 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -13,8 +9,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='w-full h-full flex flex-col justify-center'>
-        <section className='text-center sm:text-start'>
+
+      <main className='w-full h-full'>
+        <section className='w-full h-full text-center sm:text-start flex flex-col justify-center sm:pt-20'>
           <p className='text-lg mb-4'>Hi, my name is</p>
           <h1 className='md:text-6xl text-5xl font-bold leading-none mb-3'>Ahmad Atif</h1>
           <h1 className='md:text-6xl text-5xl font-bold text-slate-600 leading-none mb-7'>I love creating things for web.</h1>
@@ -22,11 +19,9 @@ export default function Home() {
           <p className='max-w-2xl mb-2 sm:hidden font-light'>As a software engineer, I specialize in creating exceptional digital experiences and occasionally doing design work.</p>
           <p className='max-w-2xl mb-6 sm:hidden font-light'>While working with The Company on property websites, I prioritize accessibility and user-centered design.</p>
           <div>
-            <button className="px-6 py-3 rounded-xl border-2 whitespace-nowrap">Contact Me</button>
+            <button disabled className="px-6 py-3 rounded-xl border-2 whitespace-nowrap disabled:bg-slate-100 text-slate-300">My Resume Coming Soon</button>
           </div>
         </section>
-
-        <section></section>
       </main>
     </>
   )
