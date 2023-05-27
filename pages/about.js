@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
+import Tooltips from '../components/Tooltip'
+
 export default function About() {
   return (
     <>
@@ -22,23 +24,29 @@ export default function About() {
                 </div>
 
                 <div className='grid sm:grid-cols-6 grid-cols-2 gap-4 w-full sm:justify-between justify-center items-center text-center mt-10'>
-                    <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative'>
-                      <Image src='/portfolio/logo/html.svg' fill />
+                    <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative group'>
+                      <Image src='/portfolio/logo/html.svg' fill className='relative z-10 bg-white' />
+                      <Tooltips title='HTML' />
                     </div>
-                    <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative'>
-                      <Image src='/portfolio/logo/css.svg' fill />
+                    <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative group'>
+                      <Image src='/portfolio/logo/css.svg' fill className='relative z-10 bg-white' />
+                      <Tooltips title='CSS' />
                     </div>
-                    <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative'>
-                      <Image src='/portfolio/logo/javascript.svg' fill />
+                    <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative group'>
+                      <Image src='/portfolio/logo/javascript.svg' fill className='relative z-10 bg-white' />
+                      <Tooltips title='JAVASCRIPT' />
                     </div>
-                    <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative'>
-                      <Image src='/portfolio/logo/react.svg' fill />
+                    <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative group'>
+                      <Image src='/portfolio/logo/react.svg' fill className='relative z-10 bg-white' />
+                      <Tooltips title='REACTJS' />
                     </div>
-                    <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative'>
-                      <Image src='/portfolio/logo/nodejs.svg' fill />
+                    <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative group'>
+                      <Image src='/portfolio/logo/nodejs.svg' fill className='relative z-10 bg-white' />
+                      <Tooltips title='NODEJS' />
                     </div>
-                    <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative'>
-                      <Image src='/portfolio/logo/mongodb.svg' fill />
+                    <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative group'>
+                      <Image src='/portfolio/logo/mongodb.svg' fill className='relative z-10 bg-white' />
+                      <Tooltips title='MONGODB' />
                     </div>
                 </div>
             </section>
