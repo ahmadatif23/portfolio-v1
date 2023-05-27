@@ -29,16 +29,16 @@ export default function About() {
                       <Image src='portfolio/about/logo/css.svg' fill />
                     </div>
                     <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative'>
-                      <Image src='/logo/javascript.svg' fill />
+                      <Image src='/portfolio/logo/javascript.svg' fill />
                     </div>
                     <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative'>
-                      <Image src='/logo/react.svg' fill />
+                      <Image src='/portfolio/about/logo/react.svg' fill />
                     </div>
                     <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative'>
-                      <Image src='/logo/nodejs.svg' fill />
+                      <Image src='https://ahmadatif23.github.io/portfolio/logo/nodejs.svg' fill />
                     </div>
                     <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative'>
-                      <Image src='/logo/mongodb.svg' fill />
+                      <Image src='https://ahmadatif23.github.io/portfolio/about/logo/mongodb.svg' fill />
                     </div>
                 </div>
             </section>
