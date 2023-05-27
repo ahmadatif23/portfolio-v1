@@ -23,10 +23,10 @@ export default function About() {
 
                 <div className='grid sm:grid-cols-6 grid-cols-2 gap-4 w-full sm:justify-between justify-center items-center text-center mt-10'>
                     <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative'>
-                      <Image src='../logo/html.svg' fill />
+                      <Image src='portfolio/logo/html.svg' fill />
                     </div>
                     <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative'>
-                      <Image src='/logo/css.svg' fill />
+                      <Image src='portfolio/about/logo/css.svg' fill />
                     </div>
                     <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative'>
                       <Image src='/logo/javascript.svg' fill />
