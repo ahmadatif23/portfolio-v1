@@ -23,22 +23,22 @@ export default function About() {
 
                 <div className='grid sm:grid-cols-6 grid-cols-2 gap-4 w-full sm:justify-between justify-center items-center text-center mt-10'>
                     <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative'>
-                      <Image src='portfolio/logo/html.svg' fill />
+                      <Image src='/portfolio/logo/html.svg' fill />
                     </div>
                     <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative'>
-                      <Image src='portfolio/about/logo/css.svg' fill />
+                      <Image src='/portfolio/logo/css.svg' fill />
                     </div>
                     <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative'>
                       <Image src='/portfolio/logo/javascript.svg' fill />
                     </div>
                     <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative'>
-                      <Image src='/portfolio/about/logo/react.svg' fill />
+                      <Image src='/portfolio/logo/react.svg' fill />
                     </div>
                     <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative'>
-                      <Image src='https://ahmadatif23.github.io/portfolio/logo/nodejs.svg' fill />
+                      <Image src='/portfolio/logo/nodejs.svg' fill />
                     </div>
                     <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative'>
-                      <Image src='https://ahmadatif23.github.io/portfolio/about/logo/mongodb.svg' fill />
+                      <Image src='/portfolio/logo/mongodb.svg' fill />
                     </div>
                 </div>
             </section>
