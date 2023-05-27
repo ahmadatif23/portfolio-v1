@@ -15,7 +15,7 @@ export default function About() {
 
         <main className='w-full min-h-full'>
             <section className='text-center sm:text-start sm:min-h-screen flex flex-col justify-center items-center sm:py-10 py-5'>
-                <p className='sm:text-4xl text2xl font-bold mb-6'>Hi, I’m Ahmad. Nice to meet you.</p>
+                <p className='sm:text-4xl text-2xl font-bold mb-6'>Hi, I’m Ahmad. Nice to meet you.</p>
                 <div className='max-w-3xl sm:text-base text-sm flex flex-col items-center text-center gap-4'>
                     <p>Hello! My name is Ahmad and I enjoy creating things that live on the internet. During my time in university, I had a roommate who was studying computer science while I pursued a degree in civil engineering.</p>
                     <p>Surprisingly, I found myself comprehending his programming endeavors more easily than the subjects in my own field. My curiosity grew, and I became captivated by his work, which sparked my own interest in creating beginner-level games using JavaScript.</p>
@@ -25,27 +25,27 @@ export default function About() {
 
                 <div className='grid sm:grid-cols-6 grid-cols-2 gap-4 w-full sm:justify-between justify-center items-center text-center mt-10'>
                     <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative group'>
-                      <Image src='/portfolio/logo/html.svg' fill className='relative z-10 bg-white' />
+                      <Image src='/portfolio/logo/html.svg' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
                       <Tooltips title='HTML' />
                     </div>
                     <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative group'>
-                      <Image src='/portfolio/logo/css.svg' fill className='relative z-10 bg-white' />
+                      <Image src='/portfolio/logo/css.svg' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
                       <Tooltips title='CSS' />
                     </div>
                     <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative group'>
-                      <Image src='/portfolio/logo/javascript.svg' fill className='relative z-10 bg-white' />
+                      <Image src='/portfolio/logo/javascript.svg' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
                       <Tooltips title='JAVASCRIPT' />
                     </div>
                     <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative group'>
-                      <Image src='/portfolio/logo/react.svg' fill className='relative z-10 bg-white' />
+                      <Image src='/portfolio/logo/react.svg' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
                       <Tooltips title='REACTJS' />
                     </div>
                     <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative group'>
-                      <Image src='/portfolio/logo/nodejs.svg' fill className='relative z-10 bg-white' />
+                      <Image src='/portfolio/logo/nodejs.svg' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
                       <Tooltips title='NODEJS' />
                     </div>
                     <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative group'>
-                      <Image src='/portfolio/logo/mongodb.svg' fill className='relative z-10 bg-white' />
+                      <Image src='/portfolio/logo/mongodb.svg' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
                       <Tooltips title='MONGODB' />
                     </div>
                 </div>
