@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 
 export default function About() {
   return (
@@ -12,22 +13,34 @@ export default function About() {
 
         <main className='w-full min-h-full'>
             <section className='text-center sm:text-start sm:min-h-screen flex flex-col justify-center items-center sm:py-10 py-5'>
-                <p className='md:text-4xl text-3xl font-bold mb-6'>Hi, I’m Ahmad. Nice to meet you.</p>
-                <div className='max-w-3xl flex flex-col items-center text-center gap-4'>
-                    <p>Hello! My name is Ahmad and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!</p>
-                    <p>Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.</p>
-                    <p>I also recently launched a course that covers everything you need to build a web app with the Spotify API using Node & React.</p>
+                <p className='sm:text-4xl text2xl font-bold mb-6'>Hi, I’m Ahmad. Nice to meet you.</p>
+                <div className='max-w-3xl sm:text-base text-sm flex flex-col items-center text-center gap-4'>
+                    <p>Hello! My name is Ahmad and I enjoy creating things that live on the internet. During my time in university, I had a roommate who was studying computer science while I pursued a degree in civil engineering.</p>
+                    <p>Surprisingly, I found myself comprehending his programming endeavors more easily than the subjects in my own field. My curiosity grew, and I became captivated by his work, which sparked my own interest in creating beginner-level games using JavaScript.</p>
+                    <p>Upon graduation, I reluctantly followed the path of civil engineering but lacked the passion and motivation for it. However, everything changed when I landed an internship opportunity at a startup company. There, I quickly absorbed knowledge and honed my skills, ultimately becoming proficient in web development. From that point on, I have been continuously thriving and growing in this field.</p>
                     <p>Here are a few technologies I’ve been working with recently:</p>
                 </div>
 
-                {/* <div className='grid sm:grid-cols-6 grid-cols-2 w-full justify-between'>
-                    <div className='w-32 h-32 bg-red-50'></div>
-                    <div className='w-32 h-32 bg-red-50'></div>
-                    <div className='w-32 h-32 bg-red-50'></div>
-                    <div className='w-32 h-32 bg-red-50'></div>
-                    <div className='w-32 h-32 bg-red-50'></div>
-                    <div className='w-32 h-32 bg-red-50'></div>
-                </div> */}
+                <div className='grid sm:grid-cols-6 grid-cols-2 gap-4 w-full sm:justify-between justify-center items-center text-center mt-10'>
+                    <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative'>
+                      <Image src='/logo/html.svg' fill />
+                    </div>
+                    <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative'>
+                      <Image src='/logo/css.svg' fill />
+                    </div>
+                    <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative'>
+                      <Image src='/logo/javascript.svg' fill />
+                    </div>
+                    <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative'>
+                      <Image src='/logo/react.svg' fill />
+                    </div>
+                    <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative'>
+                      <Image src='/logo/nodejs.svg' fill />
+                    </div>
+                    <div className='sm:w-32 sm:h-32 w-20 h-20 mx-auto relative'>
+                      <Image src='/logo/mongodb.svg' fill />
+                    </div>
+                </div>
             </section>
       </main>
     </>
