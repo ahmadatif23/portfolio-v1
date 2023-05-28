@@ -16,7 +16,7 @@ export default function Navbar(props) {
 
   return (
     <>
-      <div className='w-full flex py-7 px-6 xl:px-0 items-center justify-center sm:absolute top-0 z-10'>
+      <div className='w-full flex py-7 px-6 xl:px-0 items-center justify-center sm:fixed top-0 z-10 bg-white'>
         <div className='max-w-7xl w-full flex justify-between'>
           <Link href='/' onClick={ (e) => handlePage(e, '/') }>
             <div className='w-14 h-14 border-2 rounded-full flex items-center justify-center'></div>
