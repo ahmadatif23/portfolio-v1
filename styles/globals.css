@@ -9,3 +9,35 @@
     -webkit-tap-highlight-color: transparent;
     scroll-behavior: smooth;
 }
+
+.swiper-button-prev, .swiper-button-next {
+    border-radius: 10px !important;
+    background-color: #cbd5e1 !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.swiper-button-prev:hover, .swiper-button-next:hover {
+    background-color: #94a3b8 !important;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 20px !important;
+    color: white !important;
+}
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: 0 !important;
+}
+.swiper-slide {
+    opacity: 0 !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 400ms !important;
+}
+.swiper-slide-active {
+    opacity: 100 !important;
+}
+.swiper-pagination-bullet-active {
+    background: #0369a1 !important;
+}
