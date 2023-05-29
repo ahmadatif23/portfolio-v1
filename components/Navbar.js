@@ -25,7 +25,7 @@ export default function Navbar(props) {
       <div className='w-full flex py-7 px-6 xl:px-0 items-center justify-center sm:fixed top-0 z-10 bg-white'>
         <div className='max-w-7xl w-full flex justify-between'>
           <Link href='/' onClick={ (e) => handlePage(e, '/') } className='w-12 h-12 relative'>
-            <Image src='/portfolio/brand.svg' fill />
+            <Image src='/portfolio/brand.svg' fill alt='brand logo' />
           </Link>
 
           <div className='sm:flex hidden items-center gap-7'>
@@ -65,7 +65,7 @@ export default function Navbar(props) {
             <div className='w-full h-full flex flex-col justify-center'>
               <div className='flex items-center justify-center mt-10'>
                 <Link href='/' onClick={ (e) => handlePage(e, '/', 'link') } className='w-12 h-12 relative'>
-                  <Image src='/portfolio/brand.svg' fill />
+                  <Image src='/portfolio/brand.svg' fill alt='brand logo'/>
                 </Link>
               </div>
 

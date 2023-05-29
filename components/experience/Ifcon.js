@@ -19,32 +19,32 @@ export default function Nextsix() {
 
       <div className='max-w-3xl grid sm:grid-cols-6 grid-cols-3 gap-4 w-full sm:justify-between justify-center items-center text-center mt-10'>
         <div className='sm:w-20 sm:h-20 w-14 h-14 mx-auto relative group'>
-          <Image src='/portfolio/logo/html.svg' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
+          <Image src='/portfolio/logo/html.svg' alt='technology logo' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
           <Tooltips title='HTML' />
         </div>
 
         <div className='sm:w-20 sm:h-20 w-14 h-14 mx-auto relative group'>
-          <Image src='/portfolio/logo/css.svg' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
+          <Image src='/portfolio/logo/css.svg' alt='technology logo' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
           <Tooltips title='CSS' />
         </div>
 
         <div className='sm:w-20 sm:h-20 w-14 h-14 mx-auto relative group'>
-          <Image src='/portfolio/logo/javascript.svg' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
+          <Image src='/portfolio/logo/javascript.svg' alt='technology logo' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
           <Tooltips title='JAVASCRIPT' />
         </div>
 
         <div className='sm:w-20 sm:h-20 w-14 h-14 mx-auto relative group'>
-          <Image src='/portfolio/logo/laravel.svg' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
+          <Image src='/portfolio/logo/laravel.svg' alt='technology logo' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
           <Tooltips title='LARAVEL' />
         </div>
 
         <div className='sm:w-20 sm:h-20 w-14 h-14 mx-auto relative group'>
-          <Image src='/portfolio/logo/tailwindcss.svg' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
+          <Image src='/portfolio/logo/tailwindcss.svg' alt='technology logo' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
           <Tooltips title='TAILWINDCSS' />
         </div>
 
         <div className='sm:w-20 sm:h-20 w-14 h-14 mx-auto relative group'>
-          <Image src='/portfolio/logo/bootstrap.svg' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
+          <Image src='/portfolio/logo/bootstrap.svg' alt='technology logo' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
           <Tooltips title='BOOTSTRAP' />
         </div>
       </div>

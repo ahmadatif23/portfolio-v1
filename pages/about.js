@@ -43,32 +43,32 @@ export default function About() {
 
           <div className='grid sm:grid-cols-6 grid-cols-2 gap-4 w-full sm:justify-between justify-center items-center text-center mt-10'>
             <div className='sm:w-28 sm:h-28 w-20 h-20 mx-auto relative group'>
-              <Image src='/portfolio/logo/html.svg' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
+              <Image src='/portfolio/logo/html.svg' alt='technology logo' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
               <Tooltips title='HTML' />
             </div>
 
             <div className='sm:w-28 sm:h-28 w-20 h-20 mx-auto relative group'>
-              <Image src='/portfolio/logo/css.svg' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
+              <Image src='/portfolio/logo/css.svg' alt='technology logo' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
               <Tooltips title='CSS' />
             </div>
 
             <div className='sm:w-28 sm:h-28 w-20 h-20 mx-auto relative group'>
-              <Image src='/portfolio/logo/javascript.svg' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
+              <Image src='/portfolio/logo/javascript.svg' alt='technology logo' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
               <Tooltips title='JAVASCRIPT' />
             </div>
 
             <div className='sm:w-28 sm:h-28 w-20 h-20 mx-auto relative group'>
-              <Image src='/portfolio/logo/react.svg' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
+              <Image src='/portfolio/logo/react.svg' alt='technology logo' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
               <Tooltips title='REACTJS' />
             </div>
 
             <div className='sm:w-28 sm:h-28 w-20 h-20 mx-auto relative group'>
-              <Image src='/portfolio/logo/nodejs.svg' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
+              <Image src='/portfolio/logo/nodejs.svg' alt='technology logo' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
               <Tooltips title='NODEJS' />
             </div>
 
             <div className='sm:w-28 sm:h-28 w-20 h-20 mx-auto relative group'>
-              <Image src='/portfolio/logo/mongodb.svg' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
+              <Image src='/portfolio/logo/mongodb.svg' alt='technology logo' fill className='relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition' />
               <Tooltips title='MONGODB' />
             </div>
           </div>
