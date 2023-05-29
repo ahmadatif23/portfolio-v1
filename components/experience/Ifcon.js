@@ -48,6 +48,8 @@ export default function Nextsix() {
           <Tooltips title='BOOTSTRAP' />
         </div>
       </div>
+
+      {/* add click to see project */}
     </>
   )
 }

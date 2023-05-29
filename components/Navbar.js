@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 
@@ -18,8 +19,8 @@ export default function Navbar(props) {
     <>
       <div className='w-full flex py-7 px-6 xl:px-0 items-center justify-center sm:fixed top-0 z-10 bg-white'>
         <div className='max-w-7xl w-full flex justify-between'>
-          <Link href='/' onClick={ (e) => handlePage(e, '/') }>
-            <div className='w-14 h-14 border-2 rounded-full flex items-center justify-center'></div>
+          <Link href='/' onClick={ (e) => handlePage(e, '/') } className='w-12 h-12 relative'>
+            <Image src='/portfolio/brand.svg' fill />
           </Link>
 
           <div className='sm:flex hidden items-center gap-7'>
@@ -35,10 +36,10 @@ export default function Navbar(props) {
                   Experience
                 </Link>
               </li>
-              <li>Work</li>
+              {/* <li>Work</li> */}
             </ul>
 
-            <button className='px-4 py-2 rounded-xl border-2 whitespace-nowrap'>Contact Me</button>
+            {/* <button className='px-4 py-2 rounded-xl border-2 whitespace-nowrap'>Contact Me</button> */}
           </div>
 
           <div className='absolute right-0 top-0 z-10 flex sm:hidden items-center'>
@@ -58,8 +59,8 @@ export default function Navbar(props) {
           <div className={ 'absolute top-0 w-full h-screen bg-slate-200 bg-opacity-70 transition-all duration-400 ease-in-out overflow-hidden transform backdrop-blur-md ' + (sidebar ? 'left-0' : '-left-full') }>
             <div className='w-full h-full flex flex-col justify-center'>
               <div className='flex items-center justify-center mt-10'>
-                <Link href='/' onClick={ (e) => handlePage(e, '/', 'link') } className='w-14 h-14 border-2 border-white rounded-full flex items-center justify-center'>
-
+                <Link href='/' onClick={ (e) => handlePage(e, '/', 'link') } className='w-12 h-12 relative'>
+                  <Image src='/portfolio/brand.svg' fill />
                 </Link>
               </div>
 
@@ -78,9 +79,9 @@ export default function Navbar(props) {
                       </Link>
                     </li>
                     
-                    <li>Work</li>
+                    {/* <li>Work</li> */}
                   </ul>
-                  <button className='px-4 py-2 rounded-xl border-2 border-white whitespace-nowrap'>Contact Me</button>
+                  {/* <button className='px-4 py-2 rounded-xl border-2 border-white whitespace-nowrap'>Contact Me</button> */}
                 </div>
               </div>
             </div>
