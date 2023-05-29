@@ -15,6 +15,11 @@ export default function Navbar(props) {
     props.onHandlePage && props.onHandlePage(path)
   }
 
+  const handleContactMe = (e) => {
+    e.preventDefault()
+    props.onHandleContactMe && props.onHandleContactMe()
+  }
+
   return (
     <>
       <div className='w-full flex py-7 px-6 xl:px-0 items-center justify-center sm:fixed top-0 z-10 bg-white'>
@@ -39,7 +44,7 @@ export default function Navbar(props) {
               {/* <li>Work</li> */}
             </ul>
 
-            {/* <button className='px-4 py-2 rounded-xl border-2 whitespace-nowrap'>Contact Me</button> */}
+            <button onClick={ handleContactMe } className='px-4 py-2 rounded-xl border-2 whitespace-nowrap transition text-slate-500 hover:bg-sky-600 hover:text-white hover:border-sky-600'>Contact Me</button>
           </div>
 
           <div className='absolute right-0 top-0 z-10 flex sm:hidden items-center'>
@@ -81,7 +86,7 @@ export default function Navbar(props) {
                     
                     {/* <li>Work</li> */}
                   </ul>
-                  {/* <button className='px-4 py-2 rounded-xl border-2 border-white whitespace-nowrap'>Contact Me</button> */}
+                  <button onClick={ handleContactMe } className='px-4 py-2 rounded-xl whitespace-nowrap bg-sky-600 text-white'>Contact Me</button>
                 </div>
               </div>
             </div>
