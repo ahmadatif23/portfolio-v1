@@ -37,11 +37,16 @@ export default function Navbar(props) {
               </li>
 
               <li>
-                <Link href='/about' onClick={ (e) => handlePage(e, '/experience') }>
+                <Link href='/experience' onClick={ (e) => handlePage(e, '/experience') }>
                   Experience
                 </Link>
               </li>
-              {/* <li>Work</li> */}
+
+              <li>
+                <Link href='/project' onClick={ (e) => handlePage(e, '/project') }>
+                  Work
+                </Link>
+              </li>
             </ul>
 
             <button onClick={ handleContactMe } className='px-4 py-2 rounded-xl border-2 whitespace-nowrap transition text-slate-500 hover:bg-sky-600 hover:text-white hover:border-sky-600'>Contact Me</button>
@@ -83,8 +88,12 @@ export default function Navbar(props) {
                         Experience
                       </Link>
                     </li>
-                    
-                    {/* <li>Work</li> */}
+
+                    <li>
+                      <Link href='/project' onClick={ (e) => handlePage(e, '/project', 'link') }>
+                        Work
+                      </Link>
+                    </li>
                   </ul>
                   <button onClick={ handleContactMe } className='px-4 py-2 rounded-xl whitespace-nowrap bg-sky-600 text-white'>Contact Me</button>
                 </div>
