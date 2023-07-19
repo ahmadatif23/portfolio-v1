@@ -33,52 +33,52 @@ export default function About() {
 
       <main className='w-full min-h-full'>
         <section className='text-center sm:text-start sm:min-h-screen flex flex-col justify-center items-center sm:py-10 py-5'>
-          <div className='grid sm:grid-cols-3 grid-cols-2 gap-4 w-full sm:justify-between justify-center items-center text-center mt-10'>
-            <div className='sm:w-full sm:h-52 w-20 h-20 mx-auto relative group'>
+          <div className='grid sm:grid-cols-3 grid-cols-1 gap-4 w-full sm:justify-between justify-center items-center text-center sm:mt-10'>
+            <div className='sm:w-full w-[85%] h-40 sm:h-52 mx-auto relative group'>
               <Link href='https://bilutvalley.com/' target="_blank" rel="noopener noreferrer">
-                <Image src='/portfolio/project/bilut.png' alt='bilut screenshot' fill className='object-contain grayscale group-hover:grayscale-0 rounded shadow' />
+                <Image src='/portfolio/project/bilut.jpeg' alt='bilut screenshot' fill className='object-contain grayscale group-hover:grayscale-0 rounded shadow' />
               </Link>
             </div>
 
-            <div className='sm:w-full sm:h-52 w-20 h-20 mx-auto relative group'>
+            <div className='sm:w-full w-[85%] h-40 sm:h-52 mx-auto relative group'>
               <Link href='https://www.airescan.com/' target="_blank" rel="noopener noreferrer">
-                <Image src='/portfolio/project/airescan.png' alt='airescan screenshot' fill className='object-contain grayscale group-hover:grayscale-0 rounded shadow' />
+                <Image src='/portfolio/project/airescan.jpeg' alt='airescan screenshot' fill className='object-contain grayscale group-hover:grayscale-0 rounded shadow' />
               </Link>
             </div>
 
-            <div className='sm:w-full sm:h-52 w-20 h-20 mx-auto relative group'>
+            <div className='sm:w-full w-[85%] h-40 sm:h-52 mx-auto relative group'>
               <Link href='https://www.a2shipping.co.uk/' target="_blank" rel="noopener noreferrer">
-                <Image src='/portfolio/project/a2shipping.png' alt='a2shipping screenshot' fill className='object-contain grayscale group-hover:grayscale-0 rounded shadow' />
+                <Image src='/portfolio/project/a2shipping.jpeg' alt='a2shipping screenshot' fill className='object-contain grayscale group-hover:grayscale-0 rounded shadow' />
               </Link>
             </div>
 
-            <div className='sm:w-full sm:h-52 w-20 h-20 mx-auto relative group'>
+            <div className='sm:w-full w-[85%] h-40 sm:h-52 mx-auto relative group'>
               <Link href='https://blast.my/' target="_blank" rel="noopener noreferrer">
-                <Image src='/portfolio/project/blast.png' alt='blast screenshot' fill className='object-contain grayscale group-hover:grayscale-0 rounded shadow' />
+                <Image src='/portfolio/project/blast.jpeg' alt='blast screenshot' fill className='object-contain grayscale group-hover:grayscale-0 rounded shadow' />
               </Link>
             </div>
 
-            <div className='sm:w-full sm:h-52 w-20 h-20 mx-auto relative group'>
+            <div className='sm:w-full w-[85%] h-40 sm:h-52 mx-auto relative group'>
               <Link href='https://ketik.my/' target="_blank" rel="noopener noreferrer">
-                <Image src='/portfolio/project/ketik.png' alt='ketik screenshot' fill className='object-contain grayscale group-hover:grayscale-0 rounded shadow' />
+                <Image src='/portfolio/project/ketik.jpeg' alt='ketik screenshot' fill className='object-contain grayscale group-hover:grayscale-0 rounded shadow' />
               </Link>
             </div>
 
-            <div className='sm:w-full sm:h-52 w-20 h-20 mx-auto relative group'>
+            <div className='sm:w-full w-[85%] h-40 sm:h-52 mx-auto relative group'>
               <Link href='https://www.nutellamurah.com/' target="_blank" rel="noopener noreferrer">
-                <Image src='/portfolio/project/nutella.png' alt='nutella screenshot' fill className='object-contain grayscale group-hover:grayscale-0 rounded shadow' />
+                <Image src='/portfolio/project/nutella.jpeg' alt='nutella screenshot' fill className='object-contain grayscale group-hover:grayscale-0 rounded shadow' />
               </Link>
             </div>
 
-            <div className='sm:w-full sm:h-52 w-20 h-20 mx-auto relative group'>
+            <div className='sm:w-full w-[85%] h-40 sm:h-52 mx-auto relative group'>
               <Link href='https://scrutpay.com/' target="_blank" rel="noopener noreferrer">
-                <Image src='/portfolio/project/scrutpay.png' alt='scrutpay screenshot' fill className='object-contain grayscale group-hover:grayscale-0 rounded shadow' />
+                <Image src='/portfolio/project/scrutpay.jpeg' alt='scrutpay screenshot' fill className='object-contain grayscale group-hover:grayscale-0 rounded shadow' />
               </Link>
             </div>
 
-            <div className='sm:w-full sm:h-52 w-20 h-20 mx-auto relative group'>
+            <div className='sm:w-full w-[85%] h-40 sm:h-52 mx-auto relative group'>
               <Link href='https://tradinghook.com/' target="_blank" rel="noopener noreferrer">
-                <Image src='/portfolio/project/tradinghook.png' alt='tradinghook screenshot' fill className='object-contain grayscale group-hover:grayscale-0 rounded shadow' />
+                <Image src='/portfolio/project/tradinghook.jpeg' alt='tradinghook screenshot' fill className='object-contain grayscale group-hover:grayscale-0 rounded shadow' />
               </Link>
             </div>
 
