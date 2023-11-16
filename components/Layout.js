@@ -27,7 +27,7 @@ export default function Layout({ children }) {
 
     return (
         <>
-            <div className="w-full min-h-screen flex flex-col relative">
+            <div className="w-full min-h-screen flex flex-col relative select-none">
                 <Navbar onHandlePage={ handlePage } onHandleContactMe={ handleContactMe } />
                 <div className="flex-1 w-full relative">
                     <div className={ 'absolute top-0 flex h-full w-full justify-center px-6 xl:px-0 transform transition-all duration-500 ' + (page ? 'left-0' : '-left-full') }>
