@@ -43,8 +43,8 @@ export default function Navbar(props) {
               </li>
 
               <li>
-                <Link href='/project' onClick={ (e) => handlePage(e, '/project') }>
-                  Works
+                <Link href='#' onClick={ (e) => handlePage(e, '/project') }>
+                  Work
                 </Link>
               </li>
             </ul>
