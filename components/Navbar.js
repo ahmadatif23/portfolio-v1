@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
+import ContactModal from "./_shared/ContactModal";
 
 export default function Navbar(props) {
   const [sidebar, setSidebar] = useState(false);
@@ -18,11 +19,6 @@ export default function Navbar(props) {
     e.preventDefault();
     type === "link" && setSidebar(false);
     props.onHandlePage && props.onHandlePage(path);
-  };
-
-  const handleContactMe = (e) => {
-    e.preventDefault();
-    props.onHandleContactMe && props.onHandleContactMe();
   };
 
   return (
@@ -51,25 +47,7 @@ export default function Navbar(props) {
               ))}
             </ul>
 
-            <button
-              onClick={handleContactMe}
-              className="font-medium whitespace-nowrap transition-all duration-300 ease-in text-slate-600 hover:text-sky-600 hover:scale-110"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.6}
-                stroke="currentColor"
-                className="w-8 h-8"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
-                />
-              </svg>
-            </button>
+            <ContactModal />
           </div>
 
           <div className="absolute right-0 top-0 z-10 flex sm:hidden items-center">
@@ -150,25 +128,7 @@ export default function Navbar(props) {
                     ))}
                   </ul>
 
-                  <button
-                    onClick={handleContactMe}
-                    className="font-medium whitespace-nowrap transition-all duration-300 ease-in text-slate-600 hover:text-sky-600 hover:scale-110"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.6}
-                      stroke="currentColor"
-                      className="w-8 h-8"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
-                      />
-                    </svg>
-                  </button>
+                  <ContactModal />
                 </div>
               </div>
             </div>

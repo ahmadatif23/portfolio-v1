@@ -23,7 +23,7 @@ export default function SocialMedia() {
             width={30}
             height={30}
             alt="brand logo"
-            className="group-hover:scale-110 transition-all duration-300"
+            className="group-hover:scale-125 transition-all duration-300"
           />
         </Link>
       ))}
