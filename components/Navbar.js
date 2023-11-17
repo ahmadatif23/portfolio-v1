@@ -32,7 +32,7 @@ export default function Navbar(props) {
           <button
             href="/"
             onClick={(e) => handlePage(e, "/")}
-            className="w-12 h-12 relative"
+            className="w-12 h-12 relative transition-all duration-1000 hover:brightness-90 hover:scale-105 hover:rotate-[360deg]"
           >
             <Image src="/portfolio/brand.svg" fill alt="brand logo" />
           </button>
@@ -43,7 +43,7 @@ export default function Navbar(props) {
                 <li key={link.id}>
                   <button
                     onClick={(e) => handlePage(e, link.href)}
-                    className="transition-all hover:text-sky-600"
+                    className="transition-all text-slate-600 duration-300 hover:text-sky-600"
                   >
                     {link.name}
                   </button>
@@ -53,9 +53,22 @@ export default function Navbar(props) {
 
             <button
               onClick={handleContactMe}
-              className="px-4 py-2 rounded-xl border-2 font-medium whitespace-nowrap transition-all text-slate-500 hover:bg-sky-600 hover:text-white hover:border-sky-600"
+              className="font-medium whitespace-nowrap transition-all duration-300 ease-in text-slate-600 hover:text-sky-600 hover:scale-110"
             >
-              Contact Me
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.6}
+                stroke="currentColor"
+                className="w-8 h-8"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                />
+              </svg>
             </button>
           </div>
 
@@ -129,6 +142,7 @@ export default function Navbar(props) {
                       <li key={link.id + "sm"}>
                         <button
                           onClick={(e) => handlePage(e, link.href, "link")}
+                          className="transition-all text-slate-600 duration-300 hover:text-sky-600"
                         >
                           {link.name}
                         </button>
@@ -138,9 +152,22 @@ export default function Navbar(props) {
 
                   <button
                     onClick={handleContactMe}
-                    className="px-4 py-2 rounded-xl whitespace-nowrap bg-sky-600 text-white"
+                    className="font-medium whitespace-nowrap transition-all duration-300 ease-in text-slate-600 hover:text-sky-600 hover:scale-110"
                   >
-                    Contact Me
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.6}
+                      stroke="currentColor"
+                      className="w-8 h-8"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                      />
+                    </svg>
                   </button>
                 </div>
               </div>
