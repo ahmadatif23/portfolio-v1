@@ -39,8 +39,17 @@ export default function Home() {
           </p>
 
           <p className="max-w-2xl mb-6 sm:hidden font-light">
-            While working with The Next Six Sdn Bhd on property websites, I
-            prioritize accessibility and user-centered design.
+            While working with{" "}
+            <Link
+              href="https://www.sols247.org/"
+              className="relative font-bold transition-all duration-200 hover:text-[#F8BE15]"
+              target="_blank"
+            >
+              {" "}
+              SOLS Foundation{" "}
+            </Link>
+            on education websites, I prioritize accessibility and user-centered
+            design.
           </p>
 
           <SocialMedia />
