@@ -18,7 +18,7 @@ export default function Technologies() {
         <div key={technology} className="sm:w-28 sm:h-28 w-20 h-20 mx-auto relative group">
           <Image
             src={`/portfolio/logo/${technology}.svg`}
-            alt="technology logo"
+            alt={`${technology} logo`}
             fill
             className="relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition"
           />

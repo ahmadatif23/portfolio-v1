@@ -6,7 +6,7 @@ export default function Nextsix() {
   return (
     <>
       <div className='flex sm:flex-row flex-col items-center sm:mb-3 mb-2 text-slate-700 sm:text-3xl text-xl font-semibold sm:gap-3'>
-        <p className='hover:text-sky-700'>Web Developer</p>
+        <p className='hover:text-sky-700'>Web Developers</p>
         <span className='flex-shrink-0 h-2 w-2 bg-slate-500 rounded-full sm:flex hidden'></span>
         <p className='sm:text-slate-700 text-slate-500 hover:text-sky-700'>The Next Six Sdn Bhd</p>
       </div>
