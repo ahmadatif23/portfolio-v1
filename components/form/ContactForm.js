@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 
 export default function ContactForm(props) {
   const contactForm = useRef();
-  const [firstName, setFirstName] = useState("");
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [cannotSubmit, setCannotSubmit] = useState(true);
@@ -11,7 +11,7 @@ export default function ContactForm(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (firstName && email && phone) {
+    if (name && email && phone) {
       emailjs
         .sendForm(
           "service_edwauwu",
@@ -32,8 +32,8 @@ export default function ContactForm(props) {
   };
 
   useEffect(() => {
-    setCannotSubmit(!(firstName && email && phone));
-  }, [firstName, email, phone]);
+    setCannotSubmit(!(name && email && phone));
+  }, [name, email, phone]);
 
   return (
     <>
@@ -50,18 +50,19 @@ export default function ContactForm(props) {
         >
           <div className="relative flex-1">
             <input
-              value={firstName}
-              onInput={(e) => setFirstName(e.target.value)}
+              value={name}
+              onInput={(e) => setName(e.target.value)}
               type="text"
-              name="user_first_name"
+              name="user_name"
+              id="user_name"
               required
               className="relative z-10 bg-transparent focus-within:bg-white peer w-full text-sm border rounded-xl px-3 py-2 focus-within:outline-none focus-within:border-sky-600 appearance-none"
             />
             <label
-              htmlFor="user_first_name"
+              htmlFor="user_name"
               className="absolute top-0 transform transition-all duration-200 peer-valid:hidden text-slate-400 peer-focus-within:z-20 peer-focus-within:-translate-y-1/2 peer-focus-within:text-xs peer-focus-within:bg-white peer-focus-within:px-1 peer-focus-within:py-0 peer-focus-within:left-2 peer-focus-within:text-sky-600 left-3 py-2 text-sm"
             >
-              First Name
+              Name
             </label>
           </div>
 
@@ -71,6 +72,7 @@ export default function ContactForm(props) {
               onInput={(e) => setEmail(e.target.value)}
               type="email"
               name="user_email"
+              id="user_email"
               required
               className="relative z-10 bg-transparent focus-within:bg-white peer w-full text-sm border rounded-xl px-3 py-2 focus-within:outline-none focus-within:border-sky-600 appearance-none"
             />
@@ -88,6 +90,7 @@ export default function ContactForm(props) {
               onInput={(e) => setPhone(e.target.value)}
               type="number"
               name="user_phone"
+              id="user_phone"
               required
               className="relative z-10 bg-transparent focus-within:bg-white peer w-full text-sm border rounded-xl px-3 py-2 focus-within:outline-none focus-within:border-sky-600 appearance-none"
             />

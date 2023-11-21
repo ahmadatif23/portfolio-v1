@@ -16,14 +16,14 @@ export default function SocialMedia() {
           key={socialMedia.name}
           target="_blank"
           href={socialMedia.href}
-          className="h-16 w-16 flex items-center justify-center rounded-full border-2 relative group"
+          className="h-16 w-16 flex items-center justify-center rounded-full border-2 relative group overflow-hidden backdrop-opacity-90 backdrop-blur-sm"
         >
           <Image
             src={`/portfolio/social/${socialMedia.name}.svg`}
             width={30}
             height={30}
             alt="brand logo"
-            className="group-hover:scale-125 transition-all duration-300"
+            className="group-hover:scale-125 transition-all duration-300 z-10"
           />
         </Link>
       ))}

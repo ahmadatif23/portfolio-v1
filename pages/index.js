@@ -1,4 +1,5 @@
 import Meta from "@/components/Meta";
+import Particle from "@/components/_shared/Particle";
 import SocialMedia from "@/components/index/SocialMedia";
 import WaveText from "@/components/index/WaveText";
 import Link from "next/link";

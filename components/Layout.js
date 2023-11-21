@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import { useRouter } from "next/router";
+import Particle from "./_shared/Particle";
 
 export default function Layout({ children }) {
   const router = useRouter();
@@ -22,13 +23,13 @@ export default function Layout({ children }) {
     };
 
     // Subscribe to the event
-    router.events.on('routeChangeStart', handleRouteChange);
+    router.events.on("routeChangeStart", handleRouteChange);
 
     // Cleanup the subscription when the component is unmounted
     return () => {
-      router.events.off('routeChangeStart', handleRouteChange);
+      router.events.off("routeChangeStart", handleRouteChange);
     };
-  }, [router.events])
+  }, [router.events]);
 
   return (
     <>
@@ -37,12 +38,13 @@ export default function Layout({ children }) {
         <div className="flex-1 w-full relative">
           <div
             className={
-              "absolute top-0 flex h-full w-full justify-center px-6 xl:px-0 transform transition-all duration-500 " +
+              "absolute top-0 z-10 flex h-full w-full justify-center px-6 xl:px-0 transform transition-all duration-500 " +
               (page ? "left-0" : "-left-full")
             }
           >
             <div className="max-w-5xl w-full">{children}</div>
           </div>
+          <Particle />
         </div>
       </div>
     </>

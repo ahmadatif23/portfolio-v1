@@ -23,7 +23,7 @@ export default function Navbar(props) {
 
   return (
     <>
-      <div className="w-full flex py-7 px-6 xl:px-0 items-center justify-center sm:fixed top-0 z-10 bg-white">
+      <div className="w-full flex py-7 px-6 xl:px-0 items-center justify-center sm:fixed top-0 z-20 bg-transparent">
         <div className="max-w-7xl w-full flex justify-between">
           <button
             href="/"
