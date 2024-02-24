@@ -28,7 +28,7 @@ export default function JobDescription({ experience }) {
             className="sm:w-20 sm:h-20 w-14 h-14 mx-auto relative group"
           >
             <Image
-              src={`/portfolio/logo/${stack}.svg`}
+              src={`/portfolio-v1/logo/${stack}.svg`}
               alt={`${stack} logo`}
               fill
               className="relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition"

@@ -23,23 +23,23 @@ export default function Navbar(props) {
 
   return (
     <>
-      <div className="w-full flex py-7 px-6 xl:px-0 items-center justify-center sm:fixed top-0 z-20 bg-transparent">
-        <div className="max-w-7xl w-full flex justify-between">
+      <div className="top-0 z-20 flex w-full items-center justify-center bg-transparent px-6 py-7 sm:fixed xl:px-0">
+        <div className="flex w-full max-w-7xl justify-between">
           <button
             href="/"
             onClick={(e) => handlePage(e, "/")}
-            className="w-12 h-12 relative transition-all duration-1000 hover:brightness-90 hover:scale-105 hover:rotate-[360deg]"
+            className="relative h-12 w-12 transition-all duration-1000 hover:rotate-[360deg] hover:scale-105 hover:brightness-90"
           >
-            <Image src="/portfolio/brand.svg" fill alt="brand logo" />
+            <Image src="/portfolio-v1/brand.svg" fill alt="brand logo" />
           </button>
 
-          <div className="sm:flex hidden items-center gap-7">
+          <div className="hidden items-center gap-7 sm:flex">
             <ul className="flex items-center gap-7 font-medium">
               {links?.map((link) => (
                 <li key={link.id}>
                   <button
                     onClick={(e) => handlePage(e, link.href)}
-                    className="transition-all text-slate-600 duration-300 hover:text-sky-600"
+                    className="text-slate-600 transition-all duration-300 hover:text-sky-600"
                   >
                     {link.name}
                   </button>
@@ -50,9 +50,9 @@ export default function Navbar(props) {
             <ContactModal />
           </div>
 
-          <div className="absolute right-0 top-0 z-10 flex sm:hidden items-center">
+          <div className="absolute right-0 top-0 z-10 flex items-center sm:hidden">
             <div className="px-6 py-7">
-              <div className="h-14 flex items-center justify-end">
+              <div className="flex h-14 items-center justify-end">
                 <button
                   onClick={handleSidebar}
                   className={
@@ -67,7 +67,7 @@ export default function Navbar(props) {
                       viewBox="0 0 24 24"
                       strokeWidth="1.5"
                       stroke="currentColor"
-                      className="w-6 h-6"
+                      className="h-6 w-6"
                     >
                       <path
                         strokeLinecap="round"
@@ -82,7 +82,7 @@ export default function Navbar(props) {
                       viewBox="0 0 24 24"
                       strokeWidth="1.5"
                       stroke="currentColor"
-                      className="w-6 h-6"
+                      className="h-6 w-6"
                     >
                       <path
                         strokeLinecap="round"
@@ -102,25 +102,25 @@ export default function Navbar(props) {
               (sidebar ? "left-0" : "-left-full")
             }
           >
-            <div className="w-full h-full flex flex-col justify-center">
-              <div className="flex items-center justify-center mt-10">
+            <div className="flex h-full w-full flex-col justify-center">
+              <div className="mt-10 flex items-center justify-center">
                 <button
                   href="/"
                   onClick={(e) => handlePage(e, "/", "link")}
-                  className="w-12 h-12 relative"
+                  className="relative h-12 w-12"
                 >
                   <Image src="/portfolio/brand.svg" fill alt="brand logo" />
                 </button>
               </div>
 
-              <div className="flex-1 w-full flex justify-center items-center">
+              <div className="flex w-full flex-1 items-center justify-center">
                 <div className="flex flex-col items-center gap-7 px-7">
                   <ul className="flex flex-col items-center gap-7">
                     {links?.map((link) => (
                       <li key={link.id + "sm"}>
                         <button
                           onClick={(e) => handlePage(e, link.href, "link")}
-                          className="transition-all text-slate-600 duration-300 hover:text-sky-600"
+                          className="text-slate-600 transition-all duration-300 hover:text-sky-600"
                         >
                           {link.name}
                         </button>

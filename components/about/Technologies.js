@@ -13,14 +13,14 @@ export default function Technologies() {
   ];
 
   return (
-    <div className="grid sm:grid-cols-6 grid-cols-2 gap-4 w-full sm:justify-between justify-center items-center text-center mt-10">
+    <div className="mt-10 grid w-full grid-cols-2 items-center justify-center gap-4 text-center sm:grid-cols-6 sm:justify-between">
       {technologies?.map((technology) => (
-        <div key={technology} className="sm:w-28 sm:h-28 w-20 h-20 mx-auto relative group">
+        <div key={technology} className="group relative mx-auto h-20 w-20 sm:h-28 sm:w-28">
           <Image
-            src={`/portfolio/logo/${technology}.svg`}
+            src={`/portfolio-v1/logo/${technology}.svg`}
             alt={`${technology} logo`}
             fill
-            className="relative z-10 bg-white grayscale group-hover:grayscale-0 transform transition"
+            className="relative z-10 transform bg-white grayscale transition group-hover:grayscale-0"
           />
           <Tooltips title={technology.toUpperCase()} />
         </div>

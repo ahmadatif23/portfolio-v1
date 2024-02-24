@@ -19,7 +19,7 @@ export default function SocialMedia() {
           className="h-16 w-16 flex items-center justify-center rounded-full border-2 relative group overflow-hidden backdrop-opacity-90 backdrop-blur-sm"
         >
           <Image
-            src={`/portfolio/social/${socialMedia.name}.svg`}
+            src={`/portfolio-v1/social/${socialMedia.name}.svg`}
             width={30}
             height={30}
             alt="brand logo"
